@@ -1,2 +1,2 @@
 # Uni
-Teoria Programmazione 1
+Teoria programmazione 1

@@ -1,2 +1,2 @@
-# Uni
-Programmazione 1
+# Unipi
+informatica

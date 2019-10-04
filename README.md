@@ -1,2 +1,2 @@
 # Unipi
-informatica
+Informatica

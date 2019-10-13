@@ -27,7 +27,7 @@ int main(void){
 
         printf("%d\n",b); // stampa 1
 
-        while(a+b<=n){ // si usa a+b e non sum perche' mi stamperebbe un valore un valore + grande di n
+        while(a+b<=n){ // si usa a+b e non sum perche' mi stamperebbe un valore + grande di n
 
             sum=a+b;      // sum serve per dare il valore a b
             printf("%d\n",sum);

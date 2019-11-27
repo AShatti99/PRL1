@@ -7,7 +7,7 @@ int main(void){
     int x=5;
     int y=10;
 
-    sum(&x,y);             // e con sum(&x,&y)                          NON E' CHIARO
+    sum(&x,y);             // e con sum(&x,&y)                        
 
     printf("%d\n",x);   // stampa 15  
 }
@@ -16,6 +16,3 @@ void sum(int *n, int m){
 
     *n=*n+m;   // il valore puntato da n (cioe' 5) + m
 }
-
-
-// CONTINUA PRL A 19.53

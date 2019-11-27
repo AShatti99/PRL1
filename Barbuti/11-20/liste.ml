@@ -11,7 +11,11 @@
 
 
 
-(* Sulle liste e' definito un operatore di base: cons si indica con :: *)
+(*
+Sulle liste e' definito un operatore di base: cons si indica con :: 
+cons ha come PRIMO ARGOMENTO un elemento di lista e come SECONDO ARGOMENTO una lista del tipo del primo argomento 
+che voglio mettere in testa 
+*)
 
 #3 :: [4; 5];;
 (* -: int list = [3; 4; 5] *)
@@ -23,7 +27,7 @@
 (* -: int list = [3; 4; 5] *)
 
 #3 :: 4 :: 5;;
-(* ERRORE DI TIPO *)
+(* ERRORE DI TIPO perche 5 deve essere una LISTA di interi, non un intero*)
 
 
 

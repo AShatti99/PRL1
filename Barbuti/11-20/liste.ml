@@ -49,6 +49,6 @@ che voglio mettere in testa
 (* -: int list list = [[3; 5]; [5] *)
 
 #[3;5] :: [5];;
-(* ERRORE DI TIPO *)
+(* ERRORE DI TIPO perche' 5 deve essere una lista di liste di interi*)
 
 

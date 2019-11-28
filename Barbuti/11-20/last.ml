@@ -4,7 +4,7 @@ La funzione e' indefinita su lista vuota
 last[3; 4; 5] = 5 *)
 
 #let rec last l =
-    if tl l= [] then hd last
+    if tl l= [] then hd l
     else last(tl l);;
 
 #last [3; 4; 5];;

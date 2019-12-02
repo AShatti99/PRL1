@@ -54,7 +54,7 @@ rev_a[] (5 :: 4 :: [3]
 
 [5;4;3]
 
-Molto piu' efficente, il problema che bisogna utilizzare l'accumulatore giusto, se utilizzassi l'accumulatore 7,
+Molto piu' efficiente, il problema che bisogna utilizzare l'accumulatore giusto, se utilizzassi l'accumulatore 7,
 il risultato sarebbe il rev_a di quella lista ma con un 7 infondo, per risolvere bisogna nasconderlo in un'altra
 funzione. *)
 

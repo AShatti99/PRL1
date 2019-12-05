@@ -4,7 +4,7 @@
     match l with
     [x] -> x
     | x :: y :: ys ->
-        if x > max (y :: ys) then xs 
+        if x > max (y :: ys) then x 
         else max (y :: ys);;
 
 (* max : 'a list -> 'a = <fun> *)

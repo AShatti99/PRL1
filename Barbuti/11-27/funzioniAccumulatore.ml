@@ -51,7 +51,13 @@ senza accumulatore.
 es: *)
 
 #let max l=
-        let rec max_a l a=....
+        let rec max_a l a= 
+                match l with
+                [x] -> if x>a then x
+                        else a 
+    
+                | x :: y :: ys -> if x>a then max_a(y :: ys) x
+                                   else max_a(y :: ys) a
         in max_a l (hd l);; 
 
 (*Per esempio l'accumulatore puo' essere il primo elemento della lista cioe' hd l*)

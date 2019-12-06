@@ -4,12 +4,14 @@ sono funzioni in cui l'accumulatore e' un argomento in piu' alla funzione che in
 il risultato 
 *)
 
-#let max_a l a=
-    [x] -> if x>a then x
-            else a 
+#let rec max_a l a=
+        match l with
+        [x] -> if x>a then x
+               else a 
     
-    | x :: y :: ys -> if x>a then max_a(y :: ys) x
-                        else max_a (y :: ys) a;
+        | x :: y :: ys -> if x>a then max_a(y :: ys) x
+                          else max_a(y :: ys) a;;
+
 
 
 (* a e' l'accumulatore. L'accumulatore ha l'utilizzo che quando arriva alla lista lunga uno mi dice qual e'

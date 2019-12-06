@@ -1,6 +1,6 @@
 (* 
 Ordinamento di una lista 
-[3;2;=2;10] -> [-2;2;3;10]
+[3;2;-2;10] -> [-2;2;3;10]
 
 INSERTION SORT
 se la lista ha almeno un elemento (x :: xs) si ordina ricorsivamente xs e alla lista risultante si aggiunge

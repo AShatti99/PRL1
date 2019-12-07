@@ -23,7 +23,10 @@
         if x < m1 then (x, m2)
         else if x > m2 then (m1,x)
         else (m1,m2)
-    in 
-    match l with
+    in                                              
+    match l with               
     x :: xs -> foldr f (x,x) xs;;   
 (* minMax: 'a list -> 'a * 'a = <fun> *)    
+
+(* La funzione minMax e' indefinita su [] quindi non posso scrivere semplicemente "in foldr f (x,x) l;;" 
+ma devo fare un match perche' serve una lista lunga uno. *)

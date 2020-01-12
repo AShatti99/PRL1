@@ -1,1 +1,1 @@
-Appunti presi a lezione sul linguaggio C e Caml Light
+Appunti presi a lezione e laboratorio

@@ -42,7 +42,7 @@ int main(void){
 
         if(n>=0){
 
-            insHead(&lista,n);      // inserisce in testa
+            insHead(&lista,n);          // inserisce in testa
         }
         else{
 

@@ -17,8 +17,8 @@ int maxDistance(ElementoLista *lista);
 ElementoLista*  CancellaMax(ElementoLista **lista, int maxdis);
 
 
-void insTail(ElementoLista **lista, int v);					// inserisce in coda
-int absol(int v);											// calcola il valore assoluto
+void insTail(ElementoLista **lista, int v);			// inserisce in coda
+int absol(int v);						// calcola il valore assoluto
 
 
 //Function to print all the elements of the list:
@@ -71,19 +71,19 @@ ElementoLista * readList (ElementoLista **lista, int dis){
         
         scanf("%d",&n);
 
-        if(*lista==NULL){								// se la lista e' vuota, inserisce il primo numero
+        if(*lista==NULL){					// se la lista e' vuota, inserisce il primo numero
 
 			insTail(&(*lista), n);
-            lastValue=n;                                // si ricorda il valore entrato
+            lastValue=n;                                	// si ricorda il valore entrato
         }
 		else if( absol(n-lastValue) <= dis){            // se | nuovo valore - vecchio valore | inserisce in coda
 
 			insTail(&(*lista), n);
-			lastValue=n;								// e si ricorda il valore entrato
+			lastValue=n;				// e si ricorda il valore entrato
 		}
         else{
 
-            fine=1;										// senno' esce
+            fine=1;						// senno' esce
         }
     }
 
@@ -91,7 +91,7 @@ ElementoLista * readList (ElementoLista **lista, int dis){
 }
 
 
-void insTail (ElementoLista **lista, int v){		   // inserisce in coda
+void insTail (ElementoLista **lista, int v){		        // inserisce in coda
 
     ElementoLista * nuovo=malloc(sizeof(ElementoLista));
 
@@ -128,21 +128,21 @@ int absol(int v){				                // mi restituisce |v|
 
 int maxDistance(ElementoLista *lista){
 
-	int m=0;									// valore massimo trovato finora
-	int q;                                      // valore corrente
+	int m=0;					 // valore massimo trovato finora
+	int q;                                      	 // valore corrente
 
 	ElementoLista * temp1=lista;
 	ElementoLista * temp2=lista->next;
 
 	while (temp2!=NULL) {
 		
-		q=temp1->info - temp2->info;		   // mi calcola valore corrente - valore successivo
+		q=temp1->info - temp2->info;		 // mi calcola valore corrente - valore successivo
 
-		if(absol(q) > m){					   // se |q| > m
+		if(absol(q) > m){			 // se |q| > m
 
-			m=absol(q);                        // |q| diventa la nuova m
+			m=absol(q);                      // |q| diventa la nuova m
 
-			temp1=temp2;					   // va avanti
+			temp1=temp2;		         // va avanti
 			temp2=temp2->next;
 		}
 		else{
@@ -160,17 +160,17 @@ ElementoLista * CancellaMax(ElementoLista **lista, int maxdis){
 
 	ElementoLista * temp1= *lista;
 
-	if(*lista==NULL){										// se la lista vuota ritorna
+	if(*lista==NULL){						   // se la lista vuota ritorna
 
 		return *lista;
 	}
 	else{
 
-		if(temp1->next!=NULL){							   // se il valore successivo non e' nullo
+		if(temp1->next!=NULL){					   // se il valore successivo non e' nullo
 
 			int q=temp1->info - temp1->next->info;		   // mi calcola valore corrente - valore successivo
 
-			if( absol(q) == maxdis){					   // se |q| == maxdis
+			if( absol(q) == maxdis){			   // se |q| == maxdis
 
 				*lista=(*lista)->next;                     // il valore corrente diventa il valore successivo
 				free(temp1);                               // si elimina il valore corrente
